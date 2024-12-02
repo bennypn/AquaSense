@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "653622794889",
+    "firebase_url": "https://aquasense-a96e8-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "aquasense-a96e8",
+    "storage_bucket": "aquasense-a96e8.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:653622794889:android:6f98b6ca56bfe2da344458",
+        "android_client_info": {
+          "package_name": "com.example.aquasense"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfTVLxm6pdciSQ2pib1oY41OtBK3HRuQc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
