@@ -34,8 +34,6 @@ class MainActivity : AppCompatActivity() {
         val tdsTv = findViewById<TextView>(R.id.tds_tv)
         val tempTv = findViewById<TextView>(R.id.suhu_tv)
         val turbidTv = findViewById<TextView>(R.id.turbid_tv)
-        val keruhTv = findViewById<TextView>(R.id.keruh_tv)
-        val notKeruhTv = findViewById<TextView>(R.id.notkeruh_tv)
         val myRef = Firebase.database.getReference("transaction")
 
         // Read from the database
@@ -61,13 +59,6 @@ class MainActivity : AppCompatActivity() {
                 turbidTv.text = turbid
                 tempTv.text = temp
 
-                if (turbid.toFloat() > 10 ){
-                    keruhTv.isVisible = true
-                    notKeruhTv.isVisible = false
-                } else {
-                    keruhTv.isVisible = false
-                    notKeruhTv.isVisible = true
-                }
             }
 
             override fun onCancelled(error: DatabaseError) {

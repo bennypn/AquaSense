@@ -5,23 +5,24 @@
     android:id="@+id/main_act"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/mainlayout__2_"
-    tools:context=".MainActivity" >
+    android:background="@drawable/mainlayout__4_"
+    tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/tds_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="224dp"
         android:fontFamily="sans-serif-smallcaps"
         android:text="9"
-        android:textColor="#F9FAFB"
+        android:textColor="#000000"
         android:textSize="60sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.213"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.178" />
+        app:layout_constraintTop_toBottomOf="@+id/suhu_tv"
+        app:layout_constraintVertical_bias="0.981" />
 
     <TextView
         android:id="@+id/suhu_tv"
@@ -32,52 +33,21 @@
         android:textSize="60sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.793"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.169" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/turbid_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="7"
-        android:textColor="#06090B"
+        android:textColor="#FFFFFF"
         android:textSize="60sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/suhu_tv"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.209"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.424" />
-
-    <TextView
-        android:id="@+id/notkeruh_tv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Tidak Keruh"
-        android:textColor="#06090B"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.902"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.426" />
-
-    <TextView
-        android:id="@+id/keruh_tv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Keruh"
-        android:textColor="#06090B"
-        android:textSize="48sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.818"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.415" />
+        app:layout_constraintVertical_bias="0.572" />
 
     <ImageView
         android:id="@+id/questionButton"
